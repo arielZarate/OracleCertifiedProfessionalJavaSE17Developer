@@ -6,9 +6,9 @@ donde ire de forma cronologica iteractiva e incremental subiendo temas y ejercic
 ## Hoja de Ruta o Roadmap 
 
 Estoy usando lapagina web de [roadmap.sh](https://roadmap.sh/)
-Donde yo seguire la hoja de ruta orientada de[java](https://roadmap.sh/java)
+Donde yo seguire la hoja de ruta orientada de [java](https://roadmap.sh/java)
 
-![java](./public/assets/img/roadmap_java.png)
+![java](./public/roadmap_java.png)
 
 ## Consejos adicionales
 #### Práctica Constante: 
