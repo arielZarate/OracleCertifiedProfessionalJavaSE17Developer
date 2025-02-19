@@ -8,7 +8,7 @@ donde ire de forma cronologica iteractiva e incremental subiendo temas y ejercic
 Estoy usando lapagina web de [roadmap.sh](https://roadmap.sh/)
 Donde yo seguire la hoja de ruta orientada de [java](https://roadmap.sh/java)
 
-![java](./assets/roadmap_java.png)
+![java](./assets/roadmap.png)
 
 ## Consejos adicionales
 #### Práctica Constante: 
