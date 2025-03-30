@@ -95,3 +95,17 @@ la referencia al objeto es la que si cambia apuntando a un nuevo objeto , pero e
 La clase StringBuilder si es mutable
 `https://www.arquitecturajava.com/java-string-pool-un-concepto-importante/`
 `https://docs.oracle.com/javase/8/docs/api/java/lang/Object.html`
+
+
+#### Asignacion de null a variable 
+
+Cuando asignamos null a una variable , se queda sin referencia , eliminamos el puntero que apunta al objeto
+
+```
+  String s3 = "Hello World";
+  String s4 = s3;
+  s3=null;
+  System.out.println("s4 es igual a s3 " + s4 + " y la referencia de s3 al ser null queda sin referencia");
+
+```
+![null](images/asignar_null.png)
