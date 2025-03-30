@@ -32,8 +32,8 @@ public class Estudiante /**extends Object*/
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Estudiante that = (Estudiante) o;
-        return edad == that.edad && Objects.equals(nombre, that.nombre);
+        Estudiante est = (Estudiante) o;
+        return edad == est.edad && Objects.equals(nombre, est.nombre);
     }
 
     @Override

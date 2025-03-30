@@ -13,11 +13,10 @@ public class Inmutable {
 
         /**notar el cambio ahora no se modifica directamente sino que se crea una nueva referencia*/
         s1=s1.concat( " people");
-        System.out.println("se agrego people y lo hizo : "+ s1);//return hello world no lo modifico
+        System.out.println("se agrego people y lo hizo : "+ s1);//return hello world people
 
 
         System.out.println("\n **********probando string vs StringBuilder****************");
-
         String str="probando clase String en MEMORIA   ";
 
         for (int i = 1; i <= 20; i++) {

@@ -31,7 +31,7 @@ public class Principal {
 
 ![pool](images/poolString.png)
 
-Una forma de probar esto seria hacer usanddo el signo  `==`
+Una forma de probar esto seria hacer usando el signo  `==`
 ```java
 System.out.println("s1==s3 :" + s1==s3); //true
 System.out.println("s1==s4 :" + s1==s4); //false
