@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/OracleCertifiedProfessionalJavaSE17Developer.iml" filepath="$PROJECT_DIR$/.idea/OracleCertifiedProfessionalJavaSE17Developer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" filepath="$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" />
     </modules>
   </component>
 </project>
