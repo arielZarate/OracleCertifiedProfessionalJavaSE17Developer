@@ -1,4 +1,4 @@
-package ejercicios;
+package ejercicios.cmatrix;
 
 import java.util.Random;
 

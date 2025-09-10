@@ -5,10 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2cdaed-03c5-49bf-af79-b2ad58315d02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Java/src/FundamentosJava/Exercises/Matrices/Reservation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/FundamentosJava/Exercises/Matrices/Reserva.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java/src/FundamentosJava/Exercises/Matrices/enunciado.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/dbnavigator.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/FundamentosJava/matrices1/Captura de pantalla 2025-04-13 a la(s) 6.20.11 p. m..png" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/matrices1/Captura de pantalla 2025-04-13 a la(s) 6.20.11 p. m..png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/FundamentosJava/matrices1/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/matrices1/Reservation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/POO/suma_poo/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/suma_poo/Suma.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/POO/suma_poo/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/suma_poo/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrices/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/cmatrix/Matrix.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,9 +54,20 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/javaIntermedy/src/main/java" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Java/src" />
+      <recent name="$PROJECT_DIR$/javaIntermedy/src/main/java" />
+      <recent name="$PROJECT_DIR$/javaIntermedy/src/main/java/POO" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.FundamentosJava.Exercises.Matrices.Main">
     <configuration name="FundamentosJava.Exercises.Matrices.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="FundamentosJava.Exercises.Matrices.Main" />

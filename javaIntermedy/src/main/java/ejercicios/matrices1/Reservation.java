@@ -1,4 +1,4 @@
-package FundamentosJava.matrices1;
+package ejercicios.matrices1;
 
 import java.util.Arrays;
 

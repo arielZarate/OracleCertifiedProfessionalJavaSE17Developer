@@ -1,4 +1,4 @@
-package POO.suma_poo;
+package ejercicios.suma_poo;
 
 public class Suma {
     /**

@@ -1,4 +1,4 @@
-package POO.suma_poo;
+package ejercicios.suma_poo;
 
 import java.util.Scanner;
 
