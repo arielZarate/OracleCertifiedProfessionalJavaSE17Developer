@@ -7,24 +7,9 @@
     <list default="true" id="f1628aca-63a0-4d74-83d4-6cab440338b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.cache/.ApidogFastRequest/.toolWindow.db" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.cache/.ApidogFastRequest/.toolWindow.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/ApidogFastRequestProjectSetting.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ApidogFastRequestProjectSetting.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/mapper/ProductMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/ProductAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/ProductAdapter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/ProductController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductRequest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +40,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Run",
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -65,7 +51,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24597701",
-    "settings.editor.selected.configurable": "com.itangcent.idea.plugin.configurable.JavaCodeStyleConfigurable.ApidogFastRequest",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "settings.editor.splitter.proportion": "0.31933594"
   }
 }]]></component>
@@ -85,7 +71,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Application" />
       </list>
     </recent_temporary>
   </component>

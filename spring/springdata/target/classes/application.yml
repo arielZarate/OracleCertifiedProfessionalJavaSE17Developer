@@ -26,3 +26,43 @@ spring:
       hibernate:
         format_sql: true
         dialect: org.hibernate.dialect.MySQLDialect
+# Swagger / openApi   configuration
+springdoc:
+  api-docs:
+    path: /docs
+  swagger-ui:
+    path: /swagger
+
+# Logging configuration
+#logging:
+#  level:
+#    root: INFO
+#    com.arielzarate: DEBUG
+#  pattern:
+#    console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#  file:
+#    name: logs/orderservice.log
+
+
+
+# Actuator configuration
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: health,info,metrics,httptrace
+#  endpoint:s:
+#    health:
+#      show-details: always
+#  metrics:
+#    enable: all: true
+# Security configuration
+#security:
+#  user:
+#    name: admin
+#    password: admin123
+#  oauth2:
+#    resourceserver:
+#      jwt:
+#        issuer-uri: https://auth.example.com/
+
