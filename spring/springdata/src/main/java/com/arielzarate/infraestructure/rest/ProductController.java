@@ -3,9 +3,11 @@ package com.arielzarate.infraestructure.rest;
 
 import com.arielzarate.domain.model.Product;
 import com.arielzarate.domain.ports.in.ProductService;
-import com.arielzarate.infraestructure.rest.dto.ProductDTO;
 import com.arielzarate.infraestructure.rest.dto.ProductRequest;
+import com.arielzarate.infraestructure.rest.dto.ProductResponse;
 import com.arielzarate.infraestructure.rest.mapper.ProductMapper;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,21 +31,42 @@ public class ProductController {
     private final ProductService productService;
     private final ProductMapper productMapper;
 
-    @GetMapping
-    public ResponseEntity<List<ProductDTO>> getAllProducts() {
-        log.info("GET /products - Fetching all products");
-        List<ProductDTO> productList = productMapper.mapToDTOList(productService.getAllProducts());
 
-        log.info("Response GET /products");
+    @Operation(
+            summary = "Get all products",
+            description = "Retrieve a list of all products",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Successfully retrieved list of products"
+                    )
+            }
+    )
+    @GetMapping
+    public ResponseEntity<List<ProductResponse>> getAllProducts() {
+        List<ProductResponse> productList = productMapper.mapToDTOList(productService.getAllProducts());
+        log.info("Response GET - /api/products {}", productList);
         return ResponseEntity.status(HttpStatus.OK).body(productList);
     }
 
+
+    @Operation(
+            summary = "Create a new product",
+            description = "Create a new product with the provided details",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "201",
+                            description = "Product created successfully"
+                    )
+            }
+    )
     @PostMapping
-    public ResponseEntity<ProductDTO> createProduct(@RequestBody ProductRequest productRequest) {
-        log.info("POST /products - Creating a new product with body: {}", productRequest);
+    public ResponseEntity<ProductResponse> createProduct(@RequestBody ProductRequest productRequest) {
+        log.info("Request POST api/products - Creating a new product with body: {}", productRequest);
         Product product = productService.createProduct(productMapper.mapToDomain(productRequest));
-        log.info("Response POST /products - Created product with ID: {}", product.getProductId()); //tambien puedo loguear el product mapeado a DTO
-        return ResponseEntity.status(HttpStatus.CREATED).body(productMapper.mapToDTO(product));
+        ProductResponse productResponse = productMapper.mapToDTO(product);
+        log.info("Response POST api/products - Created product : {}", productResponse);
+        return ResponseEntity.status(HttpStatus.CREATED).body(productResponse);
     }
 
 

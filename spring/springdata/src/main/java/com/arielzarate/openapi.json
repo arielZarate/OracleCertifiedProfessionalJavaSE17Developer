@@ -1,0 +1,84 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "API Documentation",
+    "version" : "1.0"
+  },
+  "paths" : {
+    "/api/products" : {
+      "post" : {
+        "summary" : "createProduct",
+        "description" : "createProduct",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "type" : "object",
+                "properties" : {
+                  "productId" : {
+                    "type" : "integer",
+                    "description" : "",
+                    "format" : "int64"
+                  },
+                  "name" : {
+                    "type" : "string",
+                    "description" : ""
+                  },
+                  "description" : {
+                    "type" : "string",
+                    "description" : ""
+                  },
+                  "price" : {
+                    "type" : "number",
+                    "description" : ""
+                  },
+                  "stock" : {
+                    "type" : "integer",
+                    "description" : ""
+                  }
+                },
+                "description" : ""
+              }
+            }
+          }
+        },
+        "responses" : {
+          "200" : {
+            "description" : "",
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "type" : "object",
+                  "properties" : {
+                    "productId" : {
+                      "type" : "integer",
+                      "description" : "",
+                      "format" : "int64"
+                    },
+                    "name" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "description" : {
+                      "type" : "string",
+                      "description" : ""
+                    },
+                    "price" : {
+                      "type" : "number",
+                      "description" : ""
+                    },
+                    "stock" : {
+                      "type" : "integer",
+                      "description" : ""
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components" : { }
+}

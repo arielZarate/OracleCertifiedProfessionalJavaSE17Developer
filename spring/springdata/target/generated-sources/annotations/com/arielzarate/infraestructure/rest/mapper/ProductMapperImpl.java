@@ -1,8 +1,8 @@
 package com.arielzarate.infraestructure.rest.mapper;
 
 import com.arielzarate.domain.model.Product;
-import com.arielzarate.infraestructure.rest.dto.ProductDTO;
 import com.arielzarate.infraestructure.rest.dto.ProductRequest;
+import com.arielzarate.infraestructure.rest.dto.ProductResponse;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.processing.Generated;
@@ -10,36 +10,36 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-10-14T18:10:30-0300",
+    date = "2025-10-14T19:23:34-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component
 public class ProductMapperImpl implements ProductMapper {
 
     @Override
-    public ProductDTO mapToDTO(Product product) {
+    public ProductResponse mapToDTO(Product product) {
         if ( product == null ) {
             return null;
         }
 
-        ProductDTO productDTO = new ProductDTO();
+        ProductResponse productResponse = new ProductResponse();
 
-        productDTO.setProductId( product.getProductId() );
-        productDTO.setName( product.getName() );
-        productDTO.setDescription( product.getDescription() );
-        productDTO.setPrice( product.getPrice() );
-        productDTO.setStock( product.getStock() );
+        productResponse.setProductId( product.getProductId() );
+        productResponse.setName( product.getName() );
+        productResponse.setDescription( product.getDescription() );
+        productResponse.setPrice( product.getPrice() );
+        productResponse.setStock( product.getStock() );
 
-        return productDTO;
+        return productResponse;
     }
 
     @Override
-    public List<ProductDTO> mapToDTOList(List<Product> products) {
+    public List<ProductResponse> mapToDTOList(List<Product> products) {
         if ( products == null ) {
             return null;
         }
 
-        List<ProductDTO> list = new ArrayList<ProductDTO>( products.size() );
+        List<ProductResponse> list = new ArrayList<ProductResponse>( products.size() );
         for ( Product product : products ) {
             list.add( mapToDTO( product ) );
         }
