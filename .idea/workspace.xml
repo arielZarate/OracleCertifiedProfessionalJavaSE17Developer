@@ -5,23 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2cdaed-03c5-49bf-af79-b2ad58315d02" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/autowiredExample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/componentExample/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring/spring/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/dbnavigator.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/FundamentosJava/matrices1/Captura de pantalla 2025-04-13 a la(s) 6.20.11 p. m..png" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/matrices1/Captura de pantalla 2025-04-13 a la(s) 6.20.11 p. m..png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/FundamentosJava/matrices1/Reservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/matrices1/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/POO/suma_poo/Suma.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/suma_poo/Suma.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/POO/suma_poo/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/suma_poo/main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrices/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrices/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/Matrix.java" beforeDir="false" afterPath="$PROJECT_DIR$/javaIntermedy/src/main/java/ejercicios/cmatrix/Matrix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="module-info" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -49,13 +66,26 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Application.executor": "Debug",
     "Application.FundamentosJava.Exercises.Matrices.Main.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.com.arielzarate.Main.executor": "Run",
+    "Application.com.programandoenjava.Main.executor": "Debug",
+    "Downloaded.Files.Path.Enabled": "false",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Repository.Attach.Annotations": "true",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer"
+    "last_opened_file_path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer",
+    "onboarding.tips.debug.path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/autowiredExample/src/main/java/com/arielzarate/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24597701"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -68,13 +98,13 @@
       <recent name="$PROJECT_DIR$/javaIntermedy/src/main/java/POO" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FundamentosJava.Exercises.Matrices.Main">
-    <configuration name="FundamentosJava.Exercises.Matrices.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FundamentosJava.Exercises.Matrices.Main" />
-      <module name="OracleCertifiedProfessionalJavaSE17Developer" />
+  <component name="RunManager" selected="Application.com.arielzarate.Main">
+    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.arielzarate.Application" />
+      <module name="spring" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="FundamentosJava.Exercises.Matrices.*" />
+          <option name="PATTERN" value="com.arielzarate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,9 +125,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="com.arielzarate.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.arielzarate.Main" />
+      <module name="componentExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.arielzarate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.arielzarate.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.arielzarate.Main" />
+      <module name="autowiredExample" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.arielzarate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FundamentosJava.Exercises.Matrices.Main" />
+        <item itemvalue="Application.com.arielzarate.Main" />
+        <item itemvalue="Application.com.arielzarate.Main" />
+        <item itemvalue="Application.Application" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
