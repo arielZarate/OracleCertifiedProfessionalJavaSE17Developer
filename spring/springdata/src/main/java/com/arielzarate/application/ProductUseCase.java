@@ -26,7 +26,7 @@ public class ProductUseCase implements ProductService {
 
     @Override
     public Product getProductById(UUID id) {
-        return productPort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : "+ id.toString())));
+        return productPort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : " + id.toString())));
     }
 
     @Override
@@ -35,13 +35,16 @@ public class ProductUseCase implements ProductService {
     }
 
     @Override
-    public Product updateProduct(Product product) {
-        return productPort.updateProduct(product);
+    public Product updateProduct(UUID id, Product product) {
+        Product prod = this.getProductById(id);
+        return productPort.updateProduct(prod);
+
     }
 
     @Override
-    public void deleteProduct(Long productId) {
-
+    public void deleteProduct(UUID id) {
+        Product prod = this.getProductById(id);
+        productPort.deleteProduct(prod.getId());
     }
 }
 

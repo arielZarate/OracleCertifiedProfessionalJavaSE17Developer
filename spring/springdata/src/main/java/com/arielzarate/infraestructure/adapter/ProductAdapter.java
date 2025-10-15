@@ -30,13 +30,13 @@ public class ProductAdapter implements ProductPort {
 
     @Override
     public Optional<Product> findProductById(UUID id) {
-         return productRepository.findById(id).map(mapper::toDomain);
+        return productRepository.findById(id).map(mapper::toDomain);
 
     }
 
     @Override
-    public void deleteProduct(Long productId) {
-
+    public void deleteProduct(UUID id) {
+        productRepository.deleteById(id);
     }
 
     @Override
@@ -50,6 +50,9 @@ public class ProductAdapter implements ProductPort {
 
     @Override
     public Product updateProduct(Product product) {
-     return null ;
+        var entity = mapper.toEntity(product);
+        var updatedEntity = productRepository.save(entity);
+        return mapper.toDomain(updatedEntity);
+
     }
 }

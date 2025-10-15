@@ -3,7 +3,6 @@ package com.arielzarate.domain.ports.in;
 import com.arielzarate.domain.model.Product;
 
 import java.util.List;
-import java.util.Optional;
 import java.util.UUID;
 
 public interface ProductService {
@@ -15,9 +14,9 @@ public interface ProductService {
 
     Product createProduct(Product product);
 
-    Product updateProduct(Product product);
+    Product updateProduct(UUID id, Product product);
 
-    void deleteProduct(Long productId);
+    void deleteProduct(UUID id);
 
 
 }

@@ -13,6 +13,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -73,20 +74,73 @@ public class ProductController {
     }
 
 
-    @PutMapping
-    public ResponseEntity<ProductResponse> updateProduct(@RequestBody ProductRequest productRequest) {
-        log.info("Request PUT api/products - Updating a product with body: {}", productRequest);
-        Product product = productService.updateProduct(productMapper.mapToDomain(productRequest));
+    @Operation(
+            summary = "Update an existing product",
+            description = "Update the details of an existing product",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Product updated successfully"
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "Product not found"
+                    )
+            }
+    )
+    @PutMapping("/{id}")
+    public ResponseEntity<ProductResponse> updateProduct(@PathVariable UUID id, @RequestBody ProductRequest productRequest) {
+        log.info("Request PUT api/products - Updating a product with id: {}", id);
+        Product product = productService.updateProduct(id, productMapper.mapToDomain(productRequest));
         ProductResponse productResponse = productMapper.mapToDTO(product);
         log.info("Response PUT api/products - Updated product : {}", productResponse);
         return ResponseEntity.status(HttpStatus.OK).body(productResponse);
     }
 
+
+    @Operation(
+            summary = "Get product by ID",
+            description = "Retrieve a product by its unique ID",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "200",
+                            description = "Successfully retrieved the product"
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "Product not found"
+                    )
+            }
+    )
     @GetMapping("/{id}")
     public ResponseEntity<ProductResponse> getProductById(@PathVariable UUID id) {
+        log.info("Request GET - /api/products/{} ", id);
         Product product = productService.getProductById(id);
+        log.info("Response GET - /api/products/{} {}", id, product);
         return ResponseEntity.ok().body(productMapper.mapToDTO(product));
 
+    }
+
+    @Operation(
+            summary = "Delete a product",
+            description = "Delete a product by its unique ID",
+            responses = {
+                    @ApiResponse(
+                            responseCode = "204",
+                            description = "No Content - Product deleted successfully"
+                    ),
+                    @ApiResponse(
+                            responseCode = "404",
+                            description = "Product not found"
+                    )
+            }
+    )
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Void> deleteProduct(@PathVariable UUID id) {
+        log.info("Request DELETE - /api/products/{} ", id);
+        productService.deleteProduct(id);
+        log.info("Response DELETE - /api/products/{} - Product deleted", id);
+        return ResponseEntity.noContent().build();
     }
 
 }

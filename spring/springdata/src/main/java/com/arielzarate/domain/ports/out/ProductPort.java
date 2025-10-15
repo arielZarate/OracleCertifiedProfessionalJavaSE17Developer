@@ -13,7 +13,7 @@ public interface ProductPort {
 
     Optional<Product> findProductById(UUID id);
 
-    void deleteProduct(Long productId);
+    void deleteProduct(UUID id);
 
     // Otros métodos relacionados con la persistencia de productos
     List<Product> findAllProducts();
