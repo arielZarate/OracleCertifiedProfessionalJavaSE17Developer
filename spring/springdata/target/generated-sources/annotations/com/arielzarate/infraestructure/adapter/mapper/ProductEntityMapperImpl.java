@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-10-14T19:23:34-0300",
+    date = "2025-10-14T21:32:02-0300",
     comments = "version: 1.6.3, compiler: javac, environment: Java 21.0.2 (Oracle Corporation)"
 )
 @Component
@@ -21,6 +21,7 @@ public class ProductEntityMapperImpl implements ProductEntityMapper {
 
         ProductEntity productEntity = new ProductEntity();
 
+        productEntity.setId( product.getId() );
         productEntity.setProductId( product.getProductId() );
         productEntity.setName( product.getName() );
         productEntity.setDescription( product.getDescription() );
@@ -38,6 +39,7 @@ public class ProductEntityMapperImpl implements ProductEntityMapper {
 
         Product product = new Product();
 
+        product.setId( productEntity.getId() );
         product.setProductId( productEntity.getProductId() );
         product.setName( productEntity.getName() );
         product.setDescription( productEntity.getDescription() );

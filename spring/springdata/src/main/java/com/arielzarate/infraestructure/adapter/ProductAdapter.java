@@ -9,6 +9,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
+import java.util.Optional;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -27,8 +29,9 @@ public class ProductAdapter implements ProductPort {
     }
 
     @Override
-    public Product findProductById(Long productId) {
-        return null;
+    public Optional<Product> findProductById(UUID id) {
+         return productRepository.findById(id).map(mapper::toDomain);
+
     }
 
     @Override
@@ -46,7 +49,7 @@ public class ProductAdapter implements ProductPort {
     }
 
     @Override
-    public void updateProduct(Product product) {
-
+    public Product updateProduct(Product product) {
+     return null ;
     }
 }

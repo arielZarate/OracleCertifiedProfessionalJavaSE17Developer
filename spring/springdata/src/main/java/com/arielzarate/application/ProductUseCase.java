@@ -4,17 +4,19 @@ package com.arielzarate.application;
 import com.arielzarate.domain.model.Product;
 import com.arielzarate.domain.ports.in.ProductService;
 import com.arielzarate.domain.ports.out.ProductPort;
+import com.arielzarate.error.model.ApplicationError;
+import com.arielzarate.error.model.exception.ApplicationErrorException;
 import lombok.AllArgsConstructor;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.UUID;
+
 @Service
 @AllArgsConstructor
 public class ProductUseCase implements ProductService {
 
-    private static final Logger log = LoggerFactory.getLogger(ProductUseCase.class);
+
     private final ProductPort productPort;
 
     @Override
@@ -23,19 +25,18 @@ public class ProductUseCase implements ProductService {
     }
 
     @Override
-    public Product getProductById(Long productId) {
-        return null;
+    public Product getProductById(UUID id) {
+        return productPort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : "+ id.toString())));
     }
 
     @Override
     public Product createProduct(Product product) {
-        log.info("Creating product: {}", product);
         return productPort.saveProduct(product);
     }
 
     @Override
-    public Product updateProduct(Long productId, Product product) {
-        return null;
+    public Product updateProduct(Product product) {
+        return productPort.updateProduct(product);
     }
 
     @Override
@@ -43,3 +44,10 @@ public class ProductUseCase implements ProductService {
 
     }
 }
+
+
+/**
+ * Seimpre validar que los métodos de la capa de aplicación (use case) no tengan lógica de negocio.
+ * la logica de negocio debe estar en la capa de dominio (servicios de dominio o entidades).
+ * si deseo agregar validaciones, debo crear un servicio de dominio que se encargue de esa lógica.
+ */
