@@ -7,7 +7,6 @@ import java.util.UUID;
 
 public interface ProductService {
 
-    // Definición de los métodos del servicio de productos
     List<Product> getAllProducts();
 
     Product getProductById(UUID id);

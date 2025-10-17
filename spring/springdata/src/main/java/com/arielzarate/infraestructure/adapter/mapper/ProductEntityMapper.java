@@ -9,7 +9,7 @@ import org.mapstruct.Mapper;
 public interface ProductEntityMapper {
 
     public ProductEntity toEntity(Product product);
-    public Product toDomain(ProductEntity productEntity);
 
+    public Product toDomain(ProductEntity productEntity);
 
 }

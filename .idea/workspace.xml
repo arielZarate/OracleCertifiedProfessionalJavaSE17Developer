@@ -5,27 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f2cdaed-03c5-49bf-af79-b2ad58315d02" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.ask2agent.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copilot.data.migration.edit.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/autowiredExample/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/componentExample/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring/spring/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OracleCertifiedProfessionalJavaSE17Developer.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/src/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled/untitled.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/application/ProductUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/application/ProductUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/domain/ports/in/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/domain/ports/in/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPort.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPersistencePort.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/application/ProductUseCase.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/application/ProductUseCase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/domain/ports/out/ProductPort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/infraestructure/adapter/ProductAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,30 +55,30 @@
     <option name="showLibraryContents" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Application.executor": "Debug",
-    "Application.FundamentosJava.Exercises.Matrices.Main.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.com.arielzarate.Main.executor": "Run",
-    "Application.com.programandoenjava.Main.executor": "Debug",
-    "Downloaded.Files.Path.Enabled": "false",
-    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
-    "Repository.Attach.Annotations": "true",
-    "Repository.Attach.JavaDocs": "true",
-    "Repository.Attach.Sources": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer",
-    "onboarding.tips.debug.path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/autowiredExample/src/main/java/com/arielzarate/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.24597701"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Application.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.FundamentosJava.Exercises.Matrices.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.arielzarate.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.programandoenjava.Main.executor&quot;: &quot;Debug&quot;,
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;true&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/autowiredExample/src/main/java/com/arielzarate/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.24597701&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/javaIntermedy/src/main/java" />

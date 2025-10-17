@@ -1,11 +1,8 @@
 package com.arielzarate.application;
 
 
+import com.arielzarate.domain.ProductDomainService;
 import com.arielzarate.domain.model.Product;
-import com.arielzarate.domain.ports.in.ProductService;
-import com.arielzarate.domain.ports.out.ProductPort;
-import com.arielzarate.error.model.ApplicationError;
-import com.arielzarate.error.model.exception.ApplicationErrorException;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -14,38 +11,29 @@ import java.util.UUID;
 
 @Service
 @AllArgsConstructor
-public class ProductUseCase implements ProductService {
+public class ProductUseCase {
+    private final ProductDomainService productDomainService;
 
-
-    private final ProductPort productPort;
-
-    @Override
     public List<Product> getAllProducts() {
-        return productPort.findAllProducts();
+        return productDomainService.getAllProducts();
     }
 
-    @Override
     public Product getProductById(UUID id) {
-        return productPort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : " + id.toString())));
+        return productDomainService.getProductById(id);
     }
 
-    @Override
     public Product createProduct(Product product) {
-        return productPort.saveProduct(product);
+        return productDomainService.createProduct(product);
     }
 
-    @Override
     public Product updateProduct(UUID id, Product product) {
-        Product prod = this.getProductById(id);
-        return productPort.updateProduct(prod);
-
+        return productDomainService.updateProduct(id, product);
     }
 
-    @Override
     public void deleteProduct(UUID id) {
-        Product prod = this.getProductById(id);
-        productPort.deleteProduct(prod.getId());
+        productDomainService.deleteProduct(id);
     }
+
 }
 
 

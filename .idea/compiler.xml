@@ -9,7 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="componentExample" />
       </profile>
-      <profile name="Annotation profile for spring" enabled="true">
+      <profile name="Annotation profile for autowiredExample" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
@@ -20,6 +20,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="autowiredExample" target="21" />
+      <module name="spring" target="21" />
       <module name="springdata" target="21" />
     </bytecodeTargetLevel>
   </component>

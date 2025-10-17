@@ -1,7 +1,7 @@
 package com.arielzarate.infraestructure.adapter;
 
 import com.arielzarate.domain.model.Product;
-import com.arielzarate.domain.ports.out.ProductPort;
+import com.arielzarate.domain.ports.out.ProductPersistencePort;
 import com.arielzarate.infraestructure.adapter.mapper.ProductEntityMapper;
 import com.arielzarate.infraestructure.persistence.repositories.ProductRepository;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Slf4j
 @Component
 @AllArgsConstructor
-public class ProductAdapter implements ProductPort {
+public class ProductPersistenceAdapter implements ProductPersistencePort {
 
     private final ProductRepository productRepository;
     private final ProductEntityMapper mapper;
