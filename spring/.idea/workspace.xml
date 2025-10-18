@@ -4,47 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1628aca-63a0-4d74-83d4-6cab440338b1" name="Changes" comment="refactor mapper and add putMapping and delete">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autowiredExample/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/autowiredExample/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/autowiredExample/target/classes/com/programandoenjava/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autowiredExample/target/classes/com/programandoenjava/UsuarioController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/autowiredExample/target/classes/com/programandoenjava/UsuarioService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/application/ProductUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/application/ProductUseCase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ProductDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ProductDomainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/in/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/in/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPersistencePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPersistencePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/repositories/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/repositories/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/Application.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/application/ProductUseCase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ProductDomainService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/model/Client.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/model/Product.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ports/in/ProductService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ports/out/ProductPersistencePort.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/handlerException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/model/ApplicationError.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/model/exception/ApplicationErrorException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/repositories/ProductRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/ProductController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductResponse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.java" beforeDir="false" />
+    <list default="true" id="f1628aca-63a0-4d74-83d4-6cab440338b1" name="Changes" comment="mofiffy type productEntoty and add baseEntity">
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -149,13 +110,30 @@
       <option name="project" value="LOCAL" />
       <updated>1760499111927</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mofiffy type productEntoty and add baseEntity">
+      <option name="closed" value="true" />
+      <created>1760804774259</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760804774259</updated>
+    </task>
+    <task id="LOCAL-00005" summary="mofiffy type productEntoty and add baseEntity">
+      <option name="closed" value="true" />
+      <created>1760804791267</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1760804791267</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor code" />
     <MESSAGE value="ADD CONTROLLER ADVICE" />
     <MESSAGE value="refactor mapper and add putMapping and delete" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor mapper and add putMapping and delete" />
+    <MESSAGE value="mofiffy type productEntoty and add baseEntity" />
+    <option name="LAST_COMMIT_MESSAGE" value="mofiffy type productEntoty and add baseEntity" />
   </component>
 </project>

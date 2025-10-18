@@ -4,7 +4,6 @@ package com.arielzarate.infraestructure.persistence.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
-import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -36,9 +35,8 @@ public class ProductEntity extends BaseEntity {
 }
 
 
-
 /**
  * Mucho cuidado al usar lombok en las entidades JPA, ya que puede generar problemas con los proxies y la carga perezosa (lazy loading).
  * En este caso, se ha utilizado @Data y @EqualsAndHashCode(callSuper = true) para incluir los campos de la clase base.
  * Asegúrate de probar bien las entidades y considerar usar @Getter y @Setter en lugar de @Data si encuentras problemas.
- * */
+ */

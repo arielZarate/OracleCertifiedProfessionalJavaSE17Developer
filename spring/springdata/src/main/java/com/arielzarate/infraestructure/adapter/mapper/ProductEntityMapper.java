@@ -16,6 +16,7 @@ public interface ProductEntityMapper {
     @Mapping(target = "deletedAt", ignore = true)
     ProductEntity toEntity(Product product);
 
+
     Product toDomain(ProductEntity productEntity);
 
 }
