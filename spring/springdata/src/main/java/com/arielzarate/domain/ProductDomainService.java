@@ -14,28 +14,26 @@ import java.util.UUID;
 
 @Service
 @AllArgsConstructor
-public class ProductDomainService implements ProductService {
+public class ProductDomainService   {
 
     private final ProductPersistencePort productPersistencePort;
 
-    @Override
-    public List<Product> getAllProducts() {
+
+    public List<Product> getAll() {
         return productPersistencePort.findAllProducts();
     }
 
-    @Override
-    public Product getProductById(UUID id) {
-        return productPersistencePort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : " + id.toString())));
+    public Product getById(Long id) {
+        return productPersistencePort.findProductById(id).orElseThrow(() -> new ApplicationErrorException(ApplicationError.notFound("id : " + id)));
     }
 
-    @Override
-    public Product createProduct(Product product) {
+
+    public Product create(Product product) {
         return productPersistencePort.saveProduct(product);
     }
 
-    @Override
-    public Product updateProduct(UUID id, Product product) {
-        Product prod = this.getProductById(id);
+    public Product update(Long id, Product product) {
+        Product prod = this.getById(id);
         prod.setName(product.getName());
         prod.setDescription(product.getDescription());
         prod.setPrice(product.getPrice());
@@ -44,9 +42,9 @@ public class ProductDomainService implements ProductService {
 
     }
 
-    @Override
-    public void deleteProduct(UUID id) {
-        Product prod = this.getProductById(id);
+
+    public void remove(Long id) {
+        Product prod = this.getById(id);
         productPersistencePort.deleteProduct(prod.getId());
     }
 

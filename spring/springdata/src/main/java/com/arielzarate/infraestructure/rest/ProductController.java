@@ -23,7 +23,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
-import java.util.UUID;
 
 
 @RestController
@@ -89,7 +88,7 @@ public class ProductController {
             }
     )
     @PutMapping("/{id}")
-    public ResponseEntity<ProductResponse> updateProduct(@PathVariable UUID id, @RequestBody ProductRequest productRequest) {
+    public ResponseEntity<ProductResponse> updateProduct(@PathVariable Long id, @RequestBody ProductRequest productRequest) {
         log.info("Request PUT api/products - Updating a product with id: {}", id);
         Product product = productService.updateProduct(id, productMapper.mapToDomain(productRequest));
         ProductResponse productResponse = productMapper.mapToDTO(product);
@@ -113,7 +112,7 @@ public class ProductController {
             }
     )
     @GetMapping("/{id}")
-    public ResponseEntity<ProductResponse> getProductById(@PathVariable UUID id) {
+    public ResponseEntity<ProductResponse> getProductById(@PathVariable Long id) {
         log.info("Request GET - /api/products/{} ", id);
         Product product = productService.getProductById(id);
         log.info("Response GET - /api/products/{} {}", id, product);
@@ -136,7 +135,7 @@ public class ProductController {
             }
     )
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteProduct(@PathVariable UUID id) {
+    public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         log.info("Request DELETE - /api/products/{} ", id);
         productService.deleteProduct(id);
         log.info("Response DELETE - /api/products/{} - Product deleted", id);

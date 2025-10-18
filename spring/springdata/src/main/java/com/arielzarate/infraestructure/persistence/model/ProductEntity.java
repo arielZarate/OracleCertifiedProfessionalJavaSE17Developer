@@ -1,31 +1,22 @@
 package com.arielzarate.infraestructure.persistence.model;
 
 
-import com.fasterxml.jackson.databind.annotation.JsonSerialize;
-import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.UUID;
 
-
+@EqualsAndHashCode(callSuper = true)
 @Entity
 @Table(name = "product")
-@NoArgsConstructor
-@Data
-public class ProductEntity {
+@Setter
+@Getter
+public class ProductEntity extends BaseEntity {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.UUID)
-    @Column(name = "id", updatable = false, nullable = false, length = 36)
-    @JsonSerialize(using = ToStringSerializer.class)
-    private UUID id;
     @Column(name = "product_id", nullable = false, unique = true)
     private Long productId;
 
@@ -40,4 +31,14 @@ public class ProductEntity {
 
     @Column(name = "stock", nullable = false)
     private Integer stock;
+
+
 }
+
+
+
+/**
+ * Mucho cuidado al usar lombok en las entidades JPA, ya que puede generar problemas con los proxies y la carga perezosa (lazy loading).
+ * En este caso, se ha utilizado @Data y @EqualsAndHashCode(callSuper = true) para incluir los campos de la clase base.
+ * Asegúrate de probar bien las entidades y considerar usar @Getter y @Setter en lugar de @Data si encuentras problemas.
+ * */

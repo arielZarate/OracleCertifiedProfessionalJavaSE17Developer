@@ -11,9 +11,9 @@ public interface ProductPersistencePort {
 
     Product saveProduct(Product product);
 
-    Optional<Product> findProductById(UUID id);
+    Optional<Product> findProductById(Long id);
 
-    void deleteProduct(UUID id);
+    void deleteProduct(Long id);
 
     List<Product> findAllProducts();
 

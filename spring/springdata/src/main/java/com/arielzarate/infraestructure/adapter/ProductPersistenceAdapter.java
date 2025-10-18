@@ -10,7 +10,6 @@ import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -29,13 +28,13 @@ public class ProductPersistenceAdapter implements ProductPersistencePort {
     }
 
     @Override
-    public Optional<Product> findProductById(UUID id) {
+    public Optional<Product> findProductById(Long id) {
         return productRepository.findById(id).map(mapper::toDomain);
 
     }
 
     @Override
-    public void deleteProduct(UUID id) {
+    public void deleteProduct(Long id) {
         productRepository.deleteById(id);
     }
 

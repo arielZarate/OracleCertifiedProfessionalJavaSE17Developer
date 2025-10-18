@@ -10,11 +10,12 @@ import java.util.UUID;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ProductResponse {
-    private UUID id;
+    private Long id;
     private Long productId;
     private String name;
     private String description;
     private Double price;
     private Integer stock;
+    private Boolean isActive;
 
 }

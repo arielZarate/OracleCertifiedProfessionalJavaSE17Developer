@@ -9,13 +9,13 @@ public interface ProductService {
 
     List<Product> getAllProducts();
 
-    Product getProductById(UUID id);
+    Product getProductById(Long id);
 
     Product createProduct(Product product);
 
-    Product updateProduct(UUID id, Product product);
+    Product updateProduct(Long id, Product product);
 
-    void deleteProduct(UUID id);
+    void deleteProduct(Long id);
 
 
 }
