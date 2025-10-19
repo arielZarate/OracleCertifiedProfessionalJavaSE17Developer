@@ -11,7 +11,6 @@ import java.util.UUID;
 @NoArgsConstructor
 public class ProductResponse {
     private Long id;
-    private Long productId;
     private String name;
     private String description;
     private Double price;

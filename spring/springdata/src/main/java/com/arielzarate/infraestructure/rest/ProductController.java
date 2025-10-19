@@ -68,7 +68,7 @@ public class ProductController {
         log.info("Request POST api/products - Creating a new product with body: {}", productRequest);
         Product product = productService.createProduct(productMapper.mapToDomain(productRequest));
         ProductResponse productResponse = productMapper.mapToDTO(product);
-        log.info("Response POST api/products - Created product : {}", productResponse);
+        log.info("Response POST api/products - Created product successfully");
         return ResponseEntity.status(HttpStatus.CREATED).body(productResponse);
     }
 
@@ -113,9 +113,9 @@ public class ProductController {
     )
     @GetMapping("/{id}")
     public ResponseEntity<ProductResponse> getProductById(@PathVariable Long id) {
-        log.info("Request GET - /api/products/{} ", id);
+        log.info("Request GET BY ID - /api/products/{} ", id);
         Product product = productService.getProductById(id);
-        log.info("Response GET - /api/products/{} {}", id, product);
+        log.info("Response GET BY ID - /api/products/{}  -> \n{} ", id, product);
         return ResponseEntity.ok().body(productMapper.mapToDTO(product));
 
     }
@@ -136,9 +136,9 @@ public class ProductController {
     )
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
-        log.info("Request DELETE - /api/products/{} ", id);
+        log.info("Request DELETE - /api/products");
         productService.deleteProduct(id);
-        log.info("Response DELETE - /api/products/{} - Product deleted", id);
+        log.info("Response DELETE - /api/products/id - Product deleted with id {}", id);
         return ResponseEntity.noContent().build();
     }
 

@@ -54,4 +54,21 @@ public class ProductPersistenceAdapter implements ProductPersistencePort {
         return mapper.toDomain(updatedEntity);
 
     }
+
+    @Override
+    public  Boolean existsProductByName(String name) {
+        return productRepository.existsByName(name);
+    }
+
+    @Override
+    public Optional<Product> findProductByName(String name) {
+        return productRepository.findByName(name).map(mapper::toDomain);
+    }
+
+    @Override
+    public Boolean existsProductByNameAndIdNot(String name, Long id) {
+        return productRepository.existsByNameAndIdNot(name, id);
+    }
+
+
 }

@@ -30,6 +30,10 @@ public class ApplicationError {
         return new ApplicationError("Bad Request " + detail, 400);
     }
 
+    public static ApplicationError conflict(String detail) {
+        return new ApplicationError("Conflict: " + detail, 409);
+    }
+
     /**
      * Solo retorno el message y el code
      */

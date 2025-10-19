@@ -1,6 +1,7 @@
 package com.arielzarate.domain.ports.out;
 
 import com.arielzarate.domain.model.Product;
+import com.arielzarate.infraestructure.rest.mapper.ProductMapperImpl;
 
 import java.util.List;
 import java.util.Optional;
@@ -19,5 +20,10 @@ public interface ProductPersistencePort {
 
     Product updateProduct(Product product);
 
+    Boolean existsProductByName(String name);
+
+    Optional<Product> findProductByName(String name);
+
+    Boolean existsProductByNameAndIdNot(String name, Long id);
 
 }

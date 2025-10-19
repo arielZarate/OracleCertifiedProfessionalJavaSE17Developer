@@ -9,7 +9,7 @@ import org.mapstruct.Mapping;
 @Mapper(componentModel = "spring")
 public interface ProductEntityMapper {
 
-    @Mapping(target = "id", ignore = true)
+   // @Mapping(target = "id", ignore = true)
     @Mapping(target = "isActive", ignore = true)
     @Mapping(target = "createdAt", ignore = true)
     @Mapping(target = "updatedAt", ignore = true)

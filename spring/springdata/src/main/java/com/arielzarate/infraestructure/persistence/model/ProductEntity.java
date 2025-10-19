@@ -16,9 +16,6 @@ import lombok.Setter;
 @Getter
 public class ProductEntity extends BaseEntity {
 
-    @Column(name = "product_id", nullable = false, unique = true)
-    private Long productId;
-
     @Column(name = "name", nullable = false)
     private String name;
 
