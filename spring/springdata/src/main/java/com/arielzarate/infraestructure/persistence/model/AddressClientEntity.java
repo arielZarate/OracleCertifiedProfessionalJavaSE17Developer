@@ -4,12 +4,13 @@ package com.arielzarate.infraestructure.persistence.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Entity
+@Getter
+@Setter
 @Table(name = "address_client")
-@Data
+@Entity
 public class AddressClientEntity extends AddressBaseEntity{
 
     @ManyToOne

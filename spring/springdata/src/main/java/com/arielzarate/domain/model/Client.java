@@ -7,6 +7,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
 @AllArgsConstructor
@@ -14,5 +16,10 @@ import lombok.Setter;
 @Setter
 public class Client extends Person {
     private Long clientId;
+
+    private List<Address> addresses;
+
+    private List<Order> orders;
+
 
 }

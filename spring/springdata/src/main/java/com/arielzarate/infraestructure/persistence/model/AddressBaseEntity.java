@@ -2,12 +2,15 @@ package com.arielzarate.infraestructure.persistence.model;
 
 
 import jakarta.persistence.*;
+import jakarta.xml.bind.annotation.XmlSchemaTypes;
+import lombok.Getter;
+import lombok.Setter;
 
 
-@Entity
-@Inheritance(strategy = InheritanceType.JOINED)
-@Table(name = "address")
-public class AddressBaseEntity extends BaseEntity {
+@MappedSuperclass
+@Setter
+@Getter
+public abstract class AddressBaseEntity extends BaseEntity {
     @Column(name = "street")
     private String street;
     @Column(name = "city")

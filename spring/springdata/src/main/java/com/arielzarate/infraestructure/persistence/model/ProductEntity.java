@@ -1,12 +1,12 @@
 package com.arielzarate.infraestructure.persistence.model;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
+
+import java.util.List;
 
 
 @EqualsAndHashCode(callSuper = true)
@@ -27,6 +27,10 @@ public class ProductEntity extends BaseEntity {
 
     @Column(name = "stock", nullable = false)
     private Integer stock;
+
+    // Relación bidireccional Many-to-Many
+    @ManyToMany(mappedBy = "products")
+    private List<OrderEntity> orders;
 
 
 }

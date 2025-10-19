@@ -1,10 +1,6 @@
 package com.arielzarate.infraestructure.persistence.model;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -25,10 +21,11 @@ public class ClientEntity extends BaseEntity {
     private String email;
     @Column(name = "phone", nullable = false)
     private String phone;
-    @OneToMany(mappedBy = "clientEntity" ,cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "address_client" ,cascade = CascadeType.ALL, orphanRemoval = true)
     private List<AddressClientEntity> addressClient  ;
+    @OneToMany(mappedBy = "clientEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<OrderEntity> orders;
 }
-
 
 /**
  *
