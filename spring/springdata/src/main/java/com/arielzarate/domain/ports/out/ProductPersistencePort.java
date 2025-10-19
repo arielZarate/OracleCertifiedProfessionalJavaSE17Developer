@@ -1,11 +1,10 @@
 package com.arielzarate.domain.ports.out;
 
 import com.arielzarate.domain.model.Product;
-import com.arielzarate.infraestructure.rest.mapper.ProductMapperImpl;
 
 import java.util.List;
 import java.util.Optional;
-import java.util.UUID;
+
 
 public interface ProductPersistencePort {
 

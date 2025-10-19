@@ -2,18 +2,17 @@ package com.arielzarate.domain.model;
 
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
-@AllArgsConstructor
+@EqualsAndHashCode(callSuper = true)
 @NoArgsConstructor
-public class Client {
-
+@AllArgsConstructor
+@Getter
+@Setter
+public class Client extends Person {
     private Long clientId;
-    private String name;
-    private String email;
-    private String phone;
-
 
 }

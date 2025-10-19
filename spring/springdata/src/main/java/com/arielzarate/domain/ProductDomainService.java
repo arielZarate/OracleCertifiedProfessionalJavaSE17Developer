@@ -32,25 +32,22 @@ public class ProductDomainService {
         if (productPersistencePort.findProductByName(product.getName()).isPresent()) {
             throw new ApplicationErrorException(ApplicationError.badRequest("Product with name '" + product.getName() + "' already exists."));
         }
+
+        product.setName(product.getName().trim());
         return productPersistencePort.saveProduct(product);
     }
 
     public Product update(Long id, Product product) {
         Product prod = this.getById(id);
 
-        log.info("Exite el product , {}", productPersistencePort.existsProductByNameAndIdNot(product.getName(),id) );
-
         if (productPersistencePort.existsProductByNameAndIdNot(product.getName(), id)) {
             throw new ApplicationErrorException(ApplicationError.badRequest("Product with name '" + product.getName() + "' already exists."));
         }
-
-
-
         prod.setName(product.getName().trim());
         prod.setDescription(product.getDescription());
         prod.setPrice(product.getPrice());
         prod.setStock(product.getStock());
-        log.info("Actualizando el product , {}", prod );
+
         return productPersistencePort.updateProduct(prod);
 
     }
