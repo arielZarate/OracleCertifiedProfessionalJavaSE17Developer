@@ -1,16 +1,13 @@
 package com.arielzarate.infraestructure.persistence.model;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 
 @Entity
+@Inheritance(strategy = InheritanceType.JOINED)
 @Table(name = "address")
-public class AddressEntity extends BaseEntity {
+public class AddressBaseEntity extends BaseEntity {
     @Column(name = "street")
     private String street;
     @Column(name = "city")
@@ -21,9 +18,5 @@ public class AddressEntity extends BaseEntity {
     private String zipCode;
     @Column(name = "country")
     private String country;
-
-    @ManyToOne
-    @JoinColumn(name = "client_id", nullable = false)
-    private ClientEntity clientEntity;
 
 }

@@ -31,8 +31,8 @@ import java.util.List;
 public class ProductController {
 
     private static final Logger log = LoggerFactory.getLogger(ProductController.class);
-    private final ProductService productService;
-    private final ProductMapper productMapper;
+    private  ProductService productService;
+    private  ProductMapper productMapper;
 
 
     @Operation(

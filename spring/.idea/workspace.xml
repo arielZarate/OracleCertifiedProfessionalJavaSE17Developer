@@ -5,16 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1628aca-63a0-4d74-83d4-6cab440338b1" name="Changes" comment="mofiffy type productEntoty and add baseEntity">
+      <change afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/repositories/ClientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ProductDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ProductDomainService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPersistencePort.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/ports/out/ProductPersistencePort.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/dto/ProductResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/mapper/ProductMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/mapper/ProductMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ProductDomainService.class" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ProductDomainService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressBaseEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ClientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/rest/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/Application.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/application/ProductUseCase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ProductDomainService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/model/Client.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/model/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ports/in/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/domain/ports/out/ProductPersistencePort.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/handlerException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/model/ApplicationError.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/error/model/exception/ApplicationErrorException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/ProductPersistenceAdapter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/BaseEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/model/ProductEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/persistence/repositories/ProductRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/ProductController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/dto/ProductResponse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/classes/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/adapter/mapper/ProductEntityMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/generated-sources/annotations/com/arielzarate/infraestructure/rest/mapper/ProductMapperImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/target/springdata.jar.original" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +69,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
@@ -49,23 +79,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Application.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/ariel/Escritorio/trabajo/core-connector&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/springdata/src/main/java/com/arielzarate/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.24597701&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;settings.editor.splitter.proportion&quot;: &quot;0.31933594&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Application.executor": "Run",
+    "Application.Main.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ariel/Desktop/personal/OracleCertifiedProfessionalJavaSE17Developer/spring",
+    "onboarding.tips.debug.path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/springdata/src/main/java/com/arielzarate/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.24597701",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "settings.editor.splitter.proportion": "0.31933594"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.arielzarate.Application" />

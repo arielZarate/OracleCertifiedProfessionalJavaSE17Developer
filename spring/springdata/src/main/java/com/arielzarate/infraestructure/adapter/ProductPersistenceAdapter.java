@@ -17,8 +17,8 @@ import java.util.stream.Collectors;
 @AllArgsConstructor
 public class ProductPersistenceAdapter implements ProductPersistencePort {
 
-    private final ProductRepository productRepository;
-    private final ProductEntityMapper mapper;
+    private  ProductRepository productRepository;
+    private  ProductEntityMapper mapper;
 
     @Override
     public Product saveProduct(Product product) {

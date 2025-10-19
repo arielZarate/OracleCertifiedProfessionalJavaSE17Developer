@@ -26,5 +26,12 @@ public class ClientEntity extends BaseEntity {
     @Column(name = "phone", nullable = false)
     private String phone;
     @OneToMany(mappedBy = "clientEntity" ,cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<AddressEntity> addressEntity;
+    private List<AddressClientEntity> addressClient  ;
 }
+
+
+/**
+ *
+ * cascade = CascadeType.ALL → si guardás o borrás un cliente, se aplican automáticamente los mismos cambios a sus direcciones.
+ *
+ * */

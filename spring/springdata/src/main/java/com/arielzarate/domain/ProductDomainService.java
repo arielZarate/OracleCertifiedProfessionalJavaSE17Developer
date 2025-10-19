@@ -16,7 +16,7 @@ import java.util.List;
 @AllArgsConstructor
 public class ProductDomainService {
 
-    private final ProductPersistencePort productPersistencePort;
+    private  ProductPersistencePort productPersistencePort;
 
 
     public List<Product> getAll() {
@@ -55,7 +55,7 @@ public class ProductDomainService {
 
     public void remove(Long id) {
         Product prod = this.getById(id);
-        productPersistencePort.deleteProduct(prod.getId());
+        productPersistencePort.deleteProduct(prod.getProductId());
     }
 
 
