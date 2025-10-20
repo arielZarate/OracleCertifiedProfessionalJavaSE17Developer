@@ -21,9 +21,9 @@ public class ClientEntity extends BaseEntity {
     private String email;
     @Column(name = "phone", nullable = false)
     private String phone;
-    @OneToMany(mappedBy = "address_client" ,cascade = CascadeType.ALL, orphanRemoval = true)
-    private List<AddressClientEntity> addressClient  ;
-    @OneToMany(mappedBy = "clientEntity", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "clientAddress" ,cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<AddressClientEntity> addresses  ;
+    @OneToMany(mappedBy = "clientOrders", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderEntity> orders;
 }
 

@@ -29,10 +29,18 @@ public class ProductEntity extends BaseEntity {
     private Integer stock;
 
     // Relación bidireccional Many-to-Many
-    @ManyToMany(mappedBy = "products")
+    @ManyToMany(mappedBy = "products" ,fetch = FetchType.LAZY) // Lado inverso de la relación
     private List<OrderEntity> orders;
 
 
+
+    /**
+     *✅ El lado inverso (no dueño) de la relación.
+     *
+     * ✅ mappedBy = "products" coincide con el nombre de la lista en OrderEntity.
+     *
+     * ✅ Sin @JoinTable, ya que se define del otro lado.
+     * */
 }
 
 

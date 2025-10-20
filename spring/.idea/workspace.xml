@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1628aca-63a0-4d74-83d4-6cab440338b1" name="Changes" comment="mofiffy type productEntoty and add baseEntity">
-      <change afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Order.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Address.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Address.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/domain/model/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressBaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressBaseEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/AddressClientEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ClientEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ClientEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/OrderEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/OrderEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/springdata/src/main/java/com/arielzarate/infraestructure/persistence/model/ProductEntity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +52,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/ariel/Desktop/personal/OracleCertifiedProfessionalJavaSE17Developer/spring",
+    "last_opened_file_path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring",
     "onboarding.tips.debug.path": "/home/ariel/Escritorio/OracleCertifiedProfessionalJavaSE17Developer/spring/springdata/src/main/java/com/arielzarate/Main.java",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
