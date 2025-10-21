@@ -1,6 +1,0 @@
-
-##files ignore
-.env
-.DS_Store
-*.jar
-target/
